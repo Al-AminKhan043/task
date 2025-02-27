@@ -1,0 +1,64 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Smaller height */
+    background-color: #333;
+    color: white;
+    position: fixed; /* Make the navbar stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 10; /* Ensure it's on top of other content */
+  }
+  
+  /* Company Name */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto; /* Pushes the logo to the left */
+  }
+  
+  /* Navigation Links Container */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Nav item styling */
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    color: #fca311;
+  }
+  
+  /* Sign Up Button */
+  .signup-btn {
+    background-color: #fca311;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .signup-btn:hover {
+    background-color: #ffbe50;
+  }
+  
+  /* Adjust the body padding to prevent overlap with fixed navbar */
+  body {
+    padding-top: 60px; /* Adjust this value to prevent content from being hidden behind navbar */
+  }
+  
